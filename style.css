@@ -1,0 +1,31 @@
+body {
+    background-color: lightblue;
+}
+
+.logo {
+    color: red;
+}
+
+.searchInput {
+    width: 300px;
+    margin: 10px; 
+    padding: 5px;
+}
+
+.searchFilters {
+    margin: 10px;
+}
+
+.resultType {
+    margin: 10px;
+}
+
+select {
+    margin: 10px;
+    padding: 5px;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px;
+}

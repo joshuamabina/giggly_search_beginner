@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Giggly Search</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1 class="logo">Giggly Search</h1>
+        <form>
+            <input type="text" placeholder="Type something fun to search" name="searchInput" class="searchInput" id="searchInput"/>
+            <br>
+            <input type="checkbox" name="searchFilters" class="searchFilters">Include images
+            <input type="checkbox" name="searchFilters" class="searchFilters">Include videos
+            <br>
+            <input type="radio" name="resultType" class="resultType">All
+            <input type="radio" name="resultType" class="resultType">Kids
+            <br>
+            <select name="sortBy">
+                <option value="Relevance">Relevance</option>
+                <option value="Newest">Newest</option>
+                <option value="Most Popular">Most Popular</option>
+            </select>
+            <br>
+            <button type="submit" style="background-color: darkblue; color: #fff" id="searchButton">Search</button>
+            <button type="button">Clear</button>
+        </form>
+        <script src="main.js"></script>
+    </body>
+</html>
