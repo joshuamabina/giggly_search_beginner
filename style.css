@@ -1,31 +1,71 @@
 body {
-    background-color: lightblue;
+    background-color: #ffffff;
 }
 
 .logo {
     color: red;
+    font-size: 56px;
+    margin-bottom: 10px;
 }
 
-.searchInput {
-    width: 300px;
-    margin: 10px; 
-    padding: 5px;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 1rem;
 }
 
-.searchFilters {
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+
+form input {
     margin: 10px;
 }
 
-.resultType {
-    margin: 10px;
+.search-input {
+    width: 500px;
+    padding: 10px;
 }
 
-select {
-    margin: 10px;
-    padding: 5px;
+.search-filters {
+    display: flex;
+    flex-direction: row;
 }
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
 
 button {
+    width: 200px;
     margin-left: 10px;
     padding: 5px;
+}
+
+.btn-main {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.action-buttons {
+    margin-top: 30px;
 }
