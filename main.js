@@ -1,11 +1,23 @@
 let searchButton = document.getElementById("searchButton");
+
 searchButton.addEventListener("click", function (e) {
     e.preventDefault();
 
-    let searchInput = document.getElementById("searchInput");
     let searchInputValue = searchInput.value.trim();
 
-    if (searchInputValue == "" || searchInputValue == null) return false;
+    if (searchInputValue == "" || searchInputValue == null) {
+        alert("Type something fun to search for, first");
 
+        return false;
+    } 
+        
     alert(`You have searched for: ${searchInput.value}`);
 });
+
+let clearButton = document.getElementById("clearButton");
+clearButton.addEventListener("click", function (e) {
+    e.preventDefault();
+    
+    searchInput.value = "";
+});
+
