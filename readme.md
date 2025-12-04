@@ -3,6 +3,6 @@ Giggly Search (Beginner)
 Still to be done:
 
 - Result type: All, Kids
-- Sort by: Relevance, Newest, Most popular
+- Advanced search: Exact word or phrase, none of these words, last update 
 
 

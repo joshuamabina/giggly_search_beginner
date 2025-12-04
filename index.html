@@ -10,21 +10,19 @@
                 <h1 class="logo">Giggly Search</h1>
             </div>
             <div class="row">
-                <form>
+                <form action="https://google.com/search" method="get">
                     <div class="row">
-                        <input type="text" placeholder="Type something fun to search" name="searchInput" class="search-input" id="searchInput"/>
+                        <input type="search" name="q" class="search-input" id="searchInput" placeholder="Type something fun to search"/>
                     </div>
 
                     <div class="row">
                         <div class="search-filters">
-                            <div class="filter-item">
-                                <input type="checkbox" name="searchFilterImages" id="searchFilterImages">
-                                <label for="searchFilterImages">Include images</label>
-                            </div>
+                            <input type="hidden" name="q" value="for kids"/>
+                            <input type="hidden" name="safe" value="active"/>
 
-                            <div class="filter-item">
-                                <input type="checkbox" name="searchFilterVideos" id="searchFilterVideos">
-                                <label for="searchFilterVideos">Include videos</label>
+                            <div class="row-item">
+                                <label><input type="radio" name="type" value="all"> All</label>
+                                <label><input type="radio" name="type" value="kids" checked> For kids</label>
                             </div>
                         </div>
                     </div>
