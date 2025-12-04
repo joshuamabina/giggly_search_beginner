@@ -9,15 +9,18 @@ searchButton.addEventListener("click", function (e) {
         alert("Type something fun to search for, first");
 
         return false;
-    } 
-        
+    }
+
     alert(`You have searched for: ${searchInput.value}`);
+
+    const form = this.closest("form");
+    form.submit();
 });
 
 let clearButton = document.getElementById("clearButton");
 clearButton.addEventListener("click", function (e) {
     e.preventDefault();
-    
+
     searchInput.value = "";
 });
 
